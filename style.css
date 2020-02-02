@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.5em;
+}
+
+/*navegacion*/
+
+#container{
+    background: #3e4547;
+    padding: 2%;
+}
+
+header a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+ul{
+    list-style: none;
+}
+
+nav{
+    float: right;
+}
+
+li{
+    display: inline-block;
+}    
+
+a:hover {
+    color: rgb(161, 161, 248);
+}
+
+.current {
+    color: rgb(161, 161, 248);
+}
+
+#menu-icon{
+    display: none;
+    font-size: 20px;
+    padding: 0%;
+}
+  
+
+#Main-Page{
+    background:  rgb(31, 31, 190);
+    display: flex;
+    align-items: center;
+}
+
+h1, img{
+   margin: 5% auto;
+}
+
+img{
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+}
+
+#Second-Page{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#Second-Page h1, i{
+    display: inline-block;
+    margin-right: 2%;
+}
+
+#Second-Page i{
+    font-size: 300%;
+}
+
+#third-Page{
+    text-align: center;
+    margin-bottom: 4%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#third-Page h1, i{
+    display: inline-block;
+    margin-right: 2%;
+}
+
+#third-Page i{
+    font-size: 300%;
+}
+
+#Pie-De-Pagina{
+    background: #3e4547;
+    height: 300px;
+    text-align: center;
+}
+
+#Pie-De-Pagina i{
+    margin-top: 10%;
+    font-size: 3em;
+    color: white
+}
+
+@media screen and (max-width: 510px) {
+
+    #Main-Page{
+        flex-direction: column;
+        text-align: center;
+    }
+
+} 
+
+@media screen and (max-width: 400px) {
+
+    #menu-icon {
+        display: inline-block;
+      }
+    
+      nav:hover ul {
+        display: block;
+      }
+    
+      nav ul, nav:active ul {
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        padding: 30px;
+        background: black;
+        border: 1px solid #a5bdcd;
+        right: 25px;
+        width: 40%;
+        opacity: .95;
+      }
+      nav li {
+        text-align: center;
+        width: 100%;
+      }
+} 
+
+
+
